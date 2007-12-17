@@ -10,7 +10,6 @@ URL:		http://search.cpan.org/dist/%{real_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/O/OP/OPI/%{real_name}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:	perl-Class-Member
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 "Sys::Proctitle" provides an interface for setting the process title
