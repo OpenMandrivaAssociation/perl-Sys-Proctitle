@@ -2,8 +2,8 @@
 
 Summary:	Sys::Proctitle - modify proctitle on Linux
 Name:		perl-%{real_name}
-Version:	0.02
-Release:	%mkrel 6
+Version:	0.03
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
