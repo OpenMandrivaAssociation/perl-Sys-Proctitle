@@ -2,14 +2,14 @@
 %define upstream_version 0.04
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	5
+Version:    %{upstream_version}
+Release:	6
 
 Summary:	Sys::Proctitle - modify proctitle on Linux
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OP/OPI/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Sys-Proctitle
+Source0:	https://cpan.metacpan.org/authors/id/O/OP/OPI/Sys-Proctitle-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Class::Member)
