@@ -1,15 +1,13 @@
 %define upstream_name    Sys-Proctitle
-%define upstream_version 0.04
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	6
+Version:    0.04
+Release:	7
 
 Summary:	Sys::Proctitle - modify proctitle on Linux
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Sys-Proctitle
-Source0:	https://cpan.metacpan.org/authors/id/O/OP/OPI/Sys-Proctitle-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/O/OP/OPI/Sys-Proctitle-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Class::Member)
@@ -25,7 +23,7 @@ $0 did not work with 5.8.0. Further, setting $0 won't work with
 mod_perl.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -66,9 +64,7 @@ rm -rf %{buildroot}
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
 + Revision: 404433
-- rebuild using %%perl_convert_version
-
-* Sat Oct 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.03-1mdv2009.1
+- rebuild using %0.04 Sat Oct 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.03-1mdv2009.1
 + Revision: 292352
 - update to new version 0.03
 
